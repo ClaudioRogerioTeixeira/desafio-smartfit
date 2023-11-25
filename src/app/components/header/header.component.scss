@@ -5,6 +5,7 @@ header {
   justify-content: center;
   width: 100%;
   min-width: 100vw;
+  background: white;
 
   gap: 36px;
 }
@@ -19,12 +20,18 @@ header .logo-container {
   width: 100%;
 }
 
+header .logo-container img {
+  height: 60px;
+}
+
 header .text-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   max-width: 80%;
   margin: 0 auto;
+
+  padding-bottom: 36px;
 }
 
 header .text-container h1 {
