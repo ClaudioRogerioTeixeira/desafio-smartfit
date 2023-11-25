@@ -27,9 +27,18 @@
   height: 30px;
 }
 
-.container-radio {
+.form-group .radio-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group .checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input[type=radio], input[type=checkbox]  {
@@ -46,15 +55,16 @@ hr {
 
 .form-group .btn-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-top: 20px;
-  gap: 20px
+  gap: 20px;
 }
 
 .form-group .btn-wrapper .btn {
   padding: 12px;
   border-radius: 4px;
-  width: 35%;
+  width: 100%;
   font-weight: 900;
   cursor: pointer;
 }
@@ -67,4 +77,28 @@ hr {
 .form-group .btn-wrapper .btn-secundary {
   border: 1px solid var(--light-text);
   background: transparent;
+}
+
+@media (min-width: 768px) {
+  .form-group .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-group .btn-wrapper .btn {
+    width: 25%
+  }
+
+  .form-group .radio-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group .checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
